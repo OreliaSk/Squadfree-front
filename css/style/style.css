@@ -1,0 +1,290 @@
+/**********************************************/
+/******************** TOOLS *******************/
+/**********************************************/
+/* Mixins */
+/* Variables */
+/*Keyframes */
+@keyframes pulse {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.2); }
+  100% {
+    transform: scale(1); } }
+/***********************************************/
+/******************** LAYOUT *******************/
+/***********************************************/
+/* BARRE DE NAVIGATION */
+.navbar {
+  /* ELEMENTS GENERIQUES DE LA BARRE DE NAVIGATION (TOUS LES ELEMENTS)*/
+  padding: 20px 0;
+  margin-bottom: 0;
+  border-bottom: 0;
+  letter-spacing: 1px;
+  background: 0 0;
+  transition: background .5s ease-in-out, padding .5s ease-in-out;
+  /* PERMET LA TRANSITION SUR LA BARRE AU MOMENT DU SCROLLING*/ }
+  .navbar .navbar-fixed-top {
+    /* CIBLE LA BARRE DE NAVIGATION */
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    top: 0;
+    border-width: 0 0 1px;
+    border-radius: 0; }
+  .navbar .navbar-header {
+    /* CIBLE LA PARTIE LOGO */
+    margin-left: -15px;
+    font-family: 'Montserrat', serif; }
+    .navbar .navbar-header .navbar-brand {
+      /*CIBLE LE LOGO */
+      height: 40px;
+      padding: 5px 15px;
+      font-size: 18px;
+      line-height: 1em;
+      font-weight: 700;
+      color: #fff;
+      font-size: 20px; }
+      .navbar .navbar-header .navbar-brand a {
+        transition: all .2s ease-in-out;
+        text-decoration: none;
+        background: 0 0; }
+  .navbar .navbar-collapse {
+    /* CIBLE LES ELEMENTS UL/LI DE LA BARRE DE NAVIGATION */
+    margin-right: 0;
+    margin-left: 0;
+    max-height: 340px;
+    padding-left: 0;
+    padding-right: 0;
+    display: block !important;
+    height: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
+    width: auto;
+    border-top: 0;
+    box-shadow: none; }
+    .navbar .navbar-collapse .nav.navbar-nav {
+      /* CIBLE LE UL DE LA NAVIGATION */
+      background-color: rgba(255, 255, 255, 0.4);
+      margin: 0;
+      list-style: none;
+      font-family: 'Lato', serif; }
+    .navbar .navbar-collapse .nav > li {
+      /* CIBLE LES LI DE LA NAVIGATION */
+      position: relative;
+      display: block; }
+      .navbar .navbar-collapse .nav > li a {
+        padding: 15px;
+        font-size: 12px;
+        letter-spacing: 1px;
+        color: #444444;
+        font-weight: 700;
+        transition: background .3s ease-in-out; }
+        .navbar .navbar-collapse .nav > li a:hover {
+          background-color: rgba(255, 255, 255, 0.3); }
+  .navbar .navbar-nav > li > a {
+    padding-bottom: 10px;
+    line-height: 20px;
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    background: 0 0; }
+
+.top-nav-collapse {
+  /* PROPRIETE LORSQU'IL Y A UN SCROLL DE LA PAGE */
+  padding: 0;
+  background: #67B0D1; }
+
+/* SECTION 1 : BANNIERE DE PRESENTATION */
+.baner {
+  width: 100%;
+  height: 650px;
+  background: url(../../img/background.jpg) top center;
+  position: relative;
+  flex-direction: column;
+  color: #fff;
+  letter-spacing: 1px;
+  text-shadow: -1px 0 #03144c;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
+
+/* SECTION 2 : ABOUT US */
+.profil {
+  background-color: #F9F9F9;
+  text-align: center;
+  padding: 15px 22px 35px 22px; }
+  .profil .img-circle {
+    border-radius: 50%; }
+
+/* SECTION 3 : OUR SERVICES */
+#services {
+  background-color: #F9F9F9;
+  margin-top: 140px;
+  text-align: center;
+  padding-bottom: 160px; }
+  #services h4 {
+    margin-bottom: 20px; }
+
+/* SECTION 4 : CONTACT US */
+.box-contact {
+  background-color: #F9F9F9;
+  padding: 15px; }
+  .box-contact label {
+    margin-bottom: 5px;
+    font-family: "Lato", serif;
+    font-weight: 700;
+    font-size: 0.85em;
+    color: #666666;
+    letter-spacing: 1px; }
+  .box-contact .form-group {
+    margin-bottom: 15px; }
+  .box-contact .adress {
+    padding: 0 20px; }
+    .box-contact .adress a {
+      font-family: 'Lato', serif;
+      color: #67B0D1; }
+      .box-contact .adress a:hover {
+        color: #666666;
+        text-decoration: none; }
+
+/* FOOTER */
+.footer {
+  padding: 50px;
+  background-color: #67B0D1; }
+  .footer .marge {
+    display: flex;
+    justify-content: center; }
+  .footer .copyright {
+    margin-top: 30px;
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.1em;
+    font-family: 'Lato', serif; }
+    .footer .copyright a {
+      color: transparent; }
+      .footer .copyright a:hover {
+        color: #2c5e2e;
+        text-decoration: none;
+        transition: all .2s ease-in-out; }
+
+/************************************************/
+/******************** MODULES *******************/
+/************************************************/
+/* TITRES SECTION 1 */
+.baner h1 {
+  margin-top: 120px;
+  margin-bottom: 30px;
+  font-size: 4.3em;
+  font-family: 'Montserrat', serif; }
+
+.baner h2 {
+  margin-bottom: 30px;
+  font-size: 1.25em;
+  font-family: 'Montserrat', serif; }
+
+/*SOUS TITRES SECTIONS 2, 3 ET 4 */
+.box-team h4, .services h4, .adress h4 {
+  font-family: 'Montserrat', serif;
+  font-weight: 700;
+  color: #666666;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin: 0; }
+
+.box-team p, .service p, .adress address {
+  font-family: 'Lato', serif;
+  color: #666666; }
+
+/*CUSTOMISATION FLECHE MONTANTE ET DESCENDANTE*/
+.arrow {
+  height: 70px;
+  width: 70px;
+  margin-top: 15px;
+  padding: 16px 16px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  text-shadow: 0 0;
+  text-decoration: none;
+  transition: box-shadow 0.5s linear;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
+  .arrow .fa {
+    color: #fff; }
+    .arrow .fa:hover {
+      color: #fff;
+      animation: pulse 1.5s linear;
+      animation-iteration-count: infinite; }
+
+/* CUSTOMISATION DES TITRES DE CHAQUE SECTION */
+.title-section {
+  text-align: center;
+  padding-top: 100px; }
+  .title-section h3 {
+    font-size: 2.9em;
+    font-family: "Montserrat", serif;
+    color: #666666;
+    font-weight: 700;
+    padding-bottom: 15px; }
+  .title-section .fa {
+    color: #666666;
+    padding-bottom: 10px; }
+  .title-section .marginbot-50 {
+    margin-bottom: 50px; }
+
+/* CUSTOMISATION DES SOCIAL MEDIA */
+.social-media {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 5px; }
+  .social-media a {
+    margin-right: 3px;
+    margin-bottom: 100px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center; }
+    .social-media a .fa {
+      color: #fff; }
+    .social-media a:hover {
+      opacity: 0.9;
+      transition: all .2s ease-in-out;
+      text-decoration: none; }
+  .social-media a:first-child {
+    background-color: #3873AE; }
+  .social-media a:nth-child(2) {
+    background-color: #62C6F8; }
+  .social-media a:nth-child(3) {
+    background-color: #D74980; }
+  .social-media a:nth-child(4) {
+    background-color: #000; }
+
+/* BOUTON FORMULAIRE D'ENVOI */
+.btn {
+  font-family: Montserrat,sans-serif;
+  font-weight: 400;
+  transition: all .3s ease-in-out;
+  margin-top: 20px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429; }
+
+.btn-custom {
+  color: #fff;
+  background-color: #67B0D1; }
+  .btn-custom:hover {
+    color: #fff;
+    background-color: #666666; }
+
+/*# sourceMappingURL=style.css.map */
